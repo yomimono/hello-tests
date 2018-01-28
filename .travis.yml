@@ -1,10 +1,13 @@
 language: c
 install: wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-docker.sh
 script: bash -ex .travis-docker.sh
+sudo: false
+services:
+  - docker
 env:
-- globals:
+  global:
   - PINS="hello:."
-- matrix:
+  matrix:
   - PACKAGE=hello OCAML_VERSION=4.01
   - PACKAGE=hello OCAML_VERSION=4.02
   - PACKAGE=hello OCAML_VERSION=4.03
