@@ -1,0 +1,21 @@
+opam-version: "1.2"
+maintainer:   "meetup@yomimono.org"
+homepage:     "https://github.com/yomimono/hello-tests"
+dev-repo:     "https://github.com/yomimono/hello-tests.git"
+bug-reports:  "https://github.com/yomimono/hello-tests/issues"
+authors: [
+  "Mindy Preston"
+]
+tags: ["org:mirage"]
+
+build: [
+  ["jbuilder" "build" "-p" name "-j" jobs ]
+]
+build-test: [
+  ["jbuilder" "build" "-p" name "-j" jobs ]
+  ["jbuilder" "runtest" "-p" name "-j" jobs ]
+]
+depends: [
+  "jbuilder" {build}
+]
+available: [ocaml-version >= "4.01.0"]
