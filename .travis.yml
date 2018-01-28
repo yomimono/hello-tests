@@ -7,6 +7,7 @@ services:
 env:
   global:
   - PINS="hello:."
+  - DISTRO=ubuntu-16.04
   matrix:
   - PACKAGE=hello OCAML_VERSION=4.01
   - PACKAGE=hello OCAML_VERSION=4.02
