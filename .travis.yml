@@ -1,6 +1,19 @@
 language: c
 install: wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-opam.sh
 script: bash -ex .travis-opam.sh
+addons:
+  apt:
+    sources:
+    - avsm
+    packages:
+    - opam
+    - aspcud
+    - debianutils
+    - libpcre3-dev
+    - m4
+    - perl
+    - pkg-config
+    - tzdata
 cache:
   directories:
     - $HOME/.opam
