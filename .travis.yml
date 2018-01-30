@@ -4,7 +4,7 @@ script: bash -ex .travis-docker.sh
 services:
 - docker
 env:
-  globals:
+  global:
   - PINS="hello:."
   - DISTRO="ubuntu-16.04"
   matrix:
