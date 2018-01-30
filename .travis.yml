@@ -8,6 +8,7 @@ addons:
     packages:
     - opam
     - aspcud
+    - m4
 cache:
   directories:
     - $HOME/.opam
