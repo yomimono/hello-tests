@@ -8,12 +8,6 @@ addons:
     packages:
     - opam
     - aspcud
-    - debianutils
-    - libpcre3-dev
-    - m4
-    - perl
-    - pkg-config
-    - tzdata
 cache:
   directories:
     - $HOME/.opam
