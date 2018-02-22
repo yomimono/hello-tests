@@ -1,5 +1,5 @@
 language: c
-install: wget https://raw.githubusercontent.com/ocaml/ocaml-ci-scripts/master/.travis-docker.sh
+install: wget https://raw.githubusercontent.com/jpdeplaix/ocaml-ci-scripts/fix-travis-docker/.travis-docker.sh
 script: bash -ex .travis-docker.sh
 sudo: false
 services:
